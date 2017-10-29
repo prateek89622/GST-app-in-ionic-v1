@@ -1,0 +1,26 @@
+<ion-view title="Transaction" id="page5">
+  <ion-content padding="true" class="has-header">
+    <form id="transaction-form5" class="list" name="transactionForm">
+      <ion-toggle toggle-class="toggle-balanced" id="transaction-toggle7" name="cashSale">Cash Sale</ion-toggle>
+      <ion-item id="transaction-list-item10" ng-click="getPartyNames()">{{partyName}}
+        <i class="icon ion-android-arrow-dropdown icon-accessory iconRight"></i>
+      </ion-item>
+      <ion-item id="transaction-list-item10" ng-click="getItems()">{{itemName}}
+        <i class="icon ion-edit icon-accessory iconRight"></i>
+      </ion-item>
+      <label class="item item-input" id="transaction-input20" name="date">
+        <span class="input-label">Date</span>
+        <input type="date" placeholder="">
+      </label>
+      <label class="item item-input item-floating-label" id="transaction-input19">
+        <span class="input-label">Total Amount</span>
+        <input id="calcTotalAmount" type="text" placeholder="Total Amount" value="0 Rs." readonly>
+      </label>
+      <label class="item item-input item-floating-label" id="transaction-input21" name="discription">
+        <span class="input-label">Discription</span>
+        <input type="text" placeholder="Discription">
+      </label>
+      <button id="transaction-button2" ng-disabled="transactionForm.$invalid" class="button button-balanced button-block">Transact</button>
+    </form>
+  </ion-content>
+</ion-view>

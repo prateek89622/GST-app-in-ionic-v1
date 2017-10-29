@@ -1,0 +1,39 @@
+<ion-view title="Add Item" id="page10">
+  <ion-content padding="true" class="has-header">
+    <form id="addItem-form3" class="list" name="itemAddForm">
+      <label class="item item-input item-floating-label" id="addItem-input4" name="itemName">
+        <span class="input-label">Item Name</span>
+        <input type="text" placeholder="Item Name" ng-model="item.name" required>
+      </label>
+      <label class="item item-input item-floating-label" id="addItem-input5" name="itemCode">
+        <span class="input-label">Item Code / Barcode</span>
+        <input type="text" placeholder="Item Code / Barcode" ng-model="item.itemCode" required>
+      </label>
+      <label class="item item-input item-floating-label" id="addItem-input6" name="HSN">
+        <span class="input-label">HSN/SAC Code</span>
+        <input type="text" placeholder="HSN/SAC Code" ng-model="item.hsn" required>
+      </label>
+      <label class="item item-input item-floating-label" id="addItem-input7" name="salePrice">
+        <span class="input-label">Sale Price (In INR)</span>
+        <input type="number" placeholder="Sale Price" ng-model="item.salePrice" required>
+      </label>
+      <label class="item item-input item-floating-label" id="addItem-input8" name="purchasePrice">
+        <span class="input-label">Purchase Price (In INR)</span>
+        <input type="number" placeholder="Purchase Price" ng-model="item.purchasePrice" required>
+      </label>
+      <label class="item item-select" id="addItem-select1" name="gst">
+        <span class="input-label">Tax (GST)</span>
+        <select ng-model="item.gstTax" required>
+          <option value="0">GST@0%</option>
+          <option value="0.25">GST@0.25%</option>
+          <option value="3">GST@3%</option>
+          <option value="5">GST@5%</option>
+          <option value="12">GST@12%</option>
+          <option value="18">GST@18%</option>
+          <option value="28">GST@28%</option>
+        </select>
+      </label>
+      <button type="submit" ng-disabled="itemAddForm.$invalid" class="button button-block button-positive" ng-click="addItem(item)">Add Item</button>
+    </form>
+  </ion-content>
+</ion-view>

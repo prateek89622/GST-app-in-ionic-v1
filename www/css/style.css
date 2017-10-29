@@ -1,0 +1,54 @@
+.iconRight{
+    float: right;
+    padding-left: 10px;
+    zoom: 1.5
+}
+#popupItem{
+    width: 50%;
+    float: left;
+}
+.popup {
+  width: 90% !important;
+  height: 450px;
+  border-radius: 20px !important;
+}
+.popup-buttons{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+.popup-buttons button{
+    border-radius: 10px !important;
+}
+.popup-body select{
+    width: 100%;
+    border-radius: 10px;
+}
+.popup-open {
+    pointer-events: all !important; 
+}
+#setPartyDetail{
+    text-align: center;
+    margin: auto;
+    border: 2px dotted;
+    width: 50%;
+    border-radius: 10px;
+    border-color: cadetblue;
+}
+#selectItemTable{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#selectItemTable tr th{
+    border: 2px dotted;
+}
+#selectItemTable tr td{
+    border: 2px dotted;
+    text-align: center;
+    width: 50%;
+}
+.setItemQty{
+    text-align: center;
+    font-size: unset !important;
+}
